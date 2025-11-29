@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Categoría - Gracie Souvenirs" id="metaDescription">
+    <meta name="keywords" content="souvenirs artesanales, figuras de yeso, velas artesanales">
+    <title>Categoría | Gracie Souvenirs</title>
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/categoria.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo-container">
+                    <div class="logo"><img src="images/logo.png" alt="Gracie Souvenirs Logo"></div>
+                    <div>
+                        <div class="logo-text">Gracie Souvenirs</div>
+                        <div class="logo-subtitle">Artesanías con amor</div>
+                    </div>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#eventos">Eventos</a></li>
+                    <li><a href="index.html#religiosos">Religiosos</a></li>
+                    <li><a href="index.html#decorativos">Decorativos</a></li>
+                    <li><a href="index.html#infantil">Infantil</a></li>
+                    <li><a href="index.html#naturaleza">Naturaleza</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs" id="breadcrumbs"></div>
+
+    <!-- Category Header -->
+    <section class="category-header" id="categoryHeader" style="display: none;"></section>
+
+    <div id="loadingState" class="loading">Cargando productos...</div>
+    <div id="errorState" class="error-message" style="display: none;"></div>
+
+    <!-- Products Grid -->
+    <div class="products-container" id="productsContainer" style="display: none;">
+        <div class="products-count" id="productsCount"></div>
+        <div class="products-grid" id="productsGrid"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Métodos de Pago y Envíos</h3>
+                <p>💳 Efectivo</p>
+                <p>💳 Transferencia bancaria</p>
+                <p>📦 Envíos a todo el país</p>
+                <p>🚚 Retiro en Malvinas Argentinas</p>
+                <p>📍 Malvinas Argentinas, GBA Norte, Argentina</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📱 WhatsApp: <a href="https://wa.me/5491161486521">+54 9 11 6148-6521</a></p>
+                <p>✉️ Consultas por WhatsApp</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1AD6fHpaRF/" target="_blank" title="Facebook">📘</a>
+                    <a href="https://wa.me/5491161486521" target="_blank" title="WhatsApp">💬</a>
+                </div>
+                <p style="margin-top: 1rem; font-style: italic;">Horario de atención: Lunes a Viernes 9:00 - 18:00hs</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gracie Souvenirs - Todos los derechos reservados | Artesanías hechas con amor</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5491161486521?text=Hola!%20Quisiera%20consultar%20sobre%20los%20productos" class="whatsapp-float" target="_blank" title="Consultar por WhatsApp"></a>
+
+    <script>
+        let categoryProducts = [];
+        let productCarousels = {};
+
+        // Obtener el ID de la subcategoría de la URL
+        function getSubcategoryFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('cat');
+        }
+
+        // Cargar productos de la categoría
+        async function loadCategory() {
+            const subcategoryId = getSubcategoryFromURL();
+            
+            if (!subcategoryId) {
+                showError('No se especificó una categoría. <a href="index.html">Volver al inicio</a>');
+                return;
+            }
+
+            try {
+                const response = await fetch('products.json');
+                const data = await response.json();
+                
+                const subcategory = data.subcategories[subcategoryId];
+                
+                if (!subcategory) {
+                    showError(`Categoría "${subcategoryId}" no encontrada. <a href="index.html">Volver al inicio</a>`);
+                    return;
+                }
+
+                // Filtrar productos de esta subcategoría
+                const products = data.products.filter(p => p.subcategories.includes(subcategoryId));
+                categoryProducts = products;
+
+                renderCategory(subcategory, products, data.categories);
+                
+            } catch (error) {
+                showError('Error al cargar los productos. Por favor, intenta nuevamente.');
+                console.error('Error:', error);
+            }
+        }
+
+        // Mostrar error
+        function showError(message) {
+            document.getElementById('loadingState').style.display = 'none';
+            document.getElementById('errorState').innerHTML = message;
+            document.getElementById('errorState').style.display = 'block';
+        }
+
+        // Renderizar categoría
+        function renderCategory(subcategory, products, categories) {
+            // Ocultar loading
+            document.getElementById('loadingState').style.display = 'none';
+            
+            // Obtener categoría padre
+            const parentCategory = categories[subcategory.parent];
+
+            // Actualizar título y meta
+            document.title = `${subcategory.name} | Gracie Souvenirs`;
+            document.getElementById('metaDescription').content = subcategory.description;
+
+            // Breadcrumbs
+            document.getElementById('breadcrumbs').innerHTML = `
+                <a href="index.html">Inicio</a>
+                <span>/</span>
+                <a href="index.html#${subcategory.parent}">${parentCategory.name}</a>
+                <span>/</span>
+                <span class="current">${subcategory.name}</span>
+            `;
+
+            // Header de categoría
+            const headerElement = document.getElementById('categoryHeader');
+            headerElement.innerHTML = `
+                <div class="category-header-content">
+                    <div class="category-icon">${subcategory.icon}</div>
+                    <h1>${subcategory.name}</h1>
+                    <p>${subcategory.description}</p>
+                </div>
+            `;
+            headerElement.style.display = 'block';
+
+            // Mostrar productos
+            document.getElementById('productsContainer').style.display = 'block';
+            
+            if (products.length === 0) {
+                document.getElementById('productsCount').textContent = 'Próximamente agregaremos productos a esta categoría';
+                document.getElementById('productsGrid').innerHTML = `
+                    <div class="empty-state" style="grid-column: 1/-1;">
+                        <div class="empty-state-icon">📦</div>
+                        <h2>Próximamente</h2>
+                        <p>Estamos preparando productos increíbles para esta categoría.</p>
+                    </div>
+                `;
+            } else {
+                document.getElementById('productsCount').textContent = 
+                    `${products.length} ${products.length === 1 ? 'producto' : 'productos'} disponibles`;
+                renderProducts(products);
+            }
+        }
+
+        // Renderizar productos
+        function renderProducts(products) {
+            const grid = document.getElementById('productsGrid');
+            
+            grid.innerHTML = products.map(product => `
+                <a href="producto.html?id=${product.id}" class="product-card">
+                    <div class="product-image-container" data-product-id="${product.id}">
+                        ${product.images.map((img, index) => `
+                            <img src="${img}" 
+                                 alt="${product.name}" 
+                                 class="product-image ${index === 0 ? '' : 'hidden'}" 
+                                 data-index="${index}"
+                                 onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, var(--crema), var(--tierra-claro))';">
+                        `).join('')}
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">${product.name}</div>
+                        <div class="product-code">Código: ${product.id}</div>
+                    </div>
+                </a>
+            `).join('');
+
+            // Iniciar carruseles
+            startCarousels();
+        }
+
+        // Iniciar carruseles automáticos
+        function startCarousels() {
+            categoryProducts.forEach(product => {
+                if (product.images.length <= 1) return;
+
+                const container = document.querySelector(`[data-product-id="${product.id}"]`);
+                if (!container) return;
+                
+                const images = container.querySelectorAll('.product-image');
+                let currentIndex = 0;
+                
+                productCarousels[product.id] = setInterval(() => {
+                    // Ocultar imagen actual
+                    images[currentIndex].classList.add('hidden');
+                    
+                    // Siguiente imagen
+                    currentIndex = (currentIndex + 1) % images.length;
+                    
+                    // Mostrar siguiente imagen
+                    images[currentIndex].classList.remove('hidden');
+                }, 5000); // Cambiar cada 5 segundos
+            });
+        }
+
+        // Limpiar intervalos al salir
+        window.addEventListener('beforeunload', () => {
+            Object.values(productCarousels).forEach(interval => clearInterval(interval));
+        });
+
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', loadCategory);
+    </script>
+</body>
+</html>

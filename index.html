@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gracie Souvenirs - Figuras artesanales de yeso y velas hechas a mano. Souvenirs perfectos para bodas, bautismos, cumpleaños, baby showers y decoración del hogar.">
+    <meta name="keywords" content="souvenirs artesanales, figuras de yeso, velas artesanales, souvenirs bautismo, souvenirs boda, baby shower, decoración hogar">
+    <meta name="author" content="Gracie Souvenirs">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gracie Souvenirs - Artesanías Hechas a Mano">
+    <meta property="og:description" content="Figuras de yeso y velas artesanales para tus eventos especiales y decoración del hogar">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    
+    <title>Gracie Souvenirs - Artesanías Hechas a Mano | Figuras de Yeso y Velas</title>
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo"><img src="images/logo.png" alt="Gracie Souvenirs Logo"></div>
+                <div>
+                    <div class="logo-text">Gracie Souvenirs</div>
+                    <div class="logo-subtitle">Artesanías con amor</div>
+                </div>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#religiosos">Religiosos</a></li>
+                    <li><a href="#decorativos">Decorativos</a></li>
+                    <li><a href="#infantil">Infantil</a></li>
+                    <li><a href="#naturaleza">Naturaleza</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenidos a Gracie Souvenirs</h1>
+            <p>¿Buscas el souvenir perfecto para tu evento especial? ¿O un detalle original para decorar tu hogar? Nuestras figuras artesanales de yeso y velas son la base ideal para tus proyectos de pintura, manualidades y decoración.</p>
+            <p>Cada pieza está hecha a mano con dedicación y amor, perfecta para bodas, bautismos, cumpleaños, baby showers y más.</p>
+            <a href="https://wa.me/5491161486521?text=Hola!%20Quisiera%20consultar%20sobre%20los%20productos" class="cta-button" target="_blank">Consultar por WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Main Categories Container -->
+    <div id="categoriesContainer"></div>
+
+    <!-- Quick Access -->
+    <section>
+        <h2 class="section-title">Acceso Rápido</h2>
+        <p class="section-subtitle">Encuentra rápidamente lo que buscas</p>
+        <div class="quick-access" id="quickAccess"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Métodos de Pago y Envíos</h3>
+                <p>💳 Efectivo</p>
+                <p>💳 Transferencia bancaria</p>
+                <p>📦 Envíos a todo el país</p>
+                <p>🚚 Retiro en Malvinas Argentinas</p>
+                <p>📍 Malvinas Argentinas, GBA Norte, Argentina</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📱 WhatsApp: <a href="https://wa.me/5491161486521">+54 9 11 6148-6521</a></p>
+                <p>✉️ Consultas por WhatsApp</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1AD6fHpaRF/" target="_blank" title="Facebook">📘</a>
+                    <a href="https://wa.me/5491161486521" target="_blank" title="WhatsApp">💬</a>
+                </div>
+                <p style="margin-top: 1rem; font-style: italic;">Horario de atención: Lunes a Viernes 9:00 - 18:00hs</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gracie Souvenirs - Todos los derechos reservados | Artesanías hechas con amor</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5491161486521?text=Hola!%20Quisiera%20consultar%20sobre%20los%20productos" class="whatsapp-float" target="_blank" title="Consultar por WhatsApp"></a>
+
+    <script>
+        let allData = null;
+
+        // Cargar datos desde JSON
+        async function loadData() {
+            try {
+                const response = await fetch('products.json');
+                allData = await response.json();
+                renderCategories();
+                renderQuickAccess();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('categoriesContainer').innerHTML = 
+                    '<div class="loading">Error al cargar las categorías. Por favor, recarga la página.</div>';
+            }
+        }
+
+        // Renderizar todas las categorías
+        function renderCategories() {
+            const container = document.getElementById('categoriesContainer');
+            const categories = allData.categories;
+            const subcategories = allData.subcategories;
+
+            let html = '';
+
+            // Agrupar subcategorías por categoría padre
+            const categoriesWithSubs = {};
+            Object.keys(categories).forEach(catKey => {
+                categoriesWithSubs[catKey] = {
+                    info: categories[catKey],
+                    subs: Object.keys(subcategories)
+                        .filter(subKey => subcategories[subKey].parent === catKey)
+                        .map(subKey => ({
+                            id: subKey,
+                            ...subcategories[subKey]
+                        }))
+                };
+            });
+
+            // Generar HTML para cada categoría
+            Object.keys(categoriesWithSubs).forEach(catKey => {
+                const cat = categoriesWithSubs[catKey];
+                
+                html += `
+                    <section id="${catKey}">
+                        <h2 class="section-title">${cat.info.name}</h2>
+                        <p class="section-subtitle">${cat.info.description}</p>
+                        <div class="category-grid">
+                            ${cat.subs.map(sub => `
+                                <a href="categoria.html?cat=${sub.id}" class="category-card">
+                                    <div class="category-image">${sub.icon}</div>
+                                    <div class="category-name">
+                                        <h3>${sub.name}</h3>
+                                        <p>${sub.description}</p>
+                                    </div>
+                                </a>
+                            `).join('')}
+                        </div>
+                    </section>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        // Renderizar acceso rápido (las 6 subcategorías más populares)
+        function renderQuickAccess() {
+            const quickAccess = document.getElementById('quickAccess');
+            const subcategories = allData.subcategories;
+
+            // Seleccionar algunas subcategorías destacadas
+            const featured = [
+                'cumpleanos-infantiles',
+                'bautismo-comunion',
+                'baby-shower-nacimiento',
+                'fiestas-15-bodas',
+                'velas-artisticas',
+                'animales-tiernos'
+            ];
+
+            const html = featured
+                .filter(id => subcategories[id])
+                .map(id => {
+                    const sub = subcategories[id];
+                    return `
+                        <a href="categoria.html?cat=${id}" class="quick-box">
+                            <h4>${sub.name}</h4>
+                        </a>
+                    `;
+                })
+                .join('');
+
+            quickAccess.innerHTML = html;
+        }
+
+        // Smooth scroll para navegación
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+
+            // Smooth scroll
+            document.addEventListener('click', (e) => {
+                const link = e.target.closest('nav a[href^="#"]');
+                if (link) {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    
+                    if (targetId === '') {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    } else {
+                        const target = document.getElementById(targetId);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                }
+            });
+
+            // Active navigation on scroll
+            window.addEventListener('scroll', () => {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('nav a');
+                
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current || 
+                        (current === '' && link.getAttribute('href') === '#')) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

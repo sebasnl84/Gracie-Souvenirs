@@ -1,0 +1,389 @@
+{
+  "products": [
+    {
+      "id": "BAU-001",
+      "name": "Ángel de la Guarda",
+      "subcategories": ["bautismo-comunion"],
+      "images": [
+        "images/productos/angel/001-1.jpg",
+        "images/productos/angel/001-2.jpg"
+      ],
+      "context": "Perfecto para celebraciones de bautismo, primera comunión o como recordatorio especial. Esta hermosa figura artesanal transmite paz y protección, ideal para regalar en momentos significativos de fe. También es una excelente base para proyectos de pintura personalizados.",
+      "description": "Figura artesanal de un ángel guardián, elaborada completamente a mano por artesanos locales. Cada pieza es única y especial, con detalles cuidadosamente trabajados que reflejan la dedicación y el amor puesto en su creación. El ángel está en posición de protección, con sus alas desplegadas y una expresión serena que transmite paz y tranquilidad.",
+      "detailedDescription": "Esta figura viene en su estado natural de yeso blanco, lista para ser pintada según tus preferencias o puede ser entregada ya pintada con colores personalizados bajo pedido. Es perfecta como souvenir para eventos religiosos o como elemento decorativo para el hogar.",
+      "dimensions": {
+        "height": "15 cm",
+        "width": "8 cm",
+        "depth": "6 cm",
+        "weight": "150 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado a pedido",
+      "features": [
+        "100% hecho a mano por artesanos locales",
+        "Cada pieza es única con detalles exclusivos",
+        "Base estable para exhibición",
+        "Ideal para personalizar con pintura",
+        "Empaque cuidadoso para regalo",
+        "Opción de pintado personalizado",
+        "Perfecto para souvenirs de eventos religiosos"
+      ],
+      "care": [
+        "Limpieza: Utiliza un paño suave y seco para quitar el polvo. Evita el uso de productos químicos.",
+        "Ubicación: Mantén la figura en lugares secos, alejada de la humedad directa.",
+        "Manipulación: Es una pieza delicada, maneja con cuidado para evitar roturas.",
+        "Personalización: Si deseas pintarla, usa pinturas acrílicas y aplica una capa de sellador al finalizar."
+      ]
+    },
+    {
+      "id": "BAU-002",
+      "name": "Niño Rezando",
+      "subcategories": ["bautismo-comunion"],
+      "images": [
+        "images/productos/bau-002-1.jpg",
+        "images/productos/bau-002-2.jpg",
+        "images/productos/bau-002-3.jpg"
+      ],
+      "context": "Ideal para primeras comuniones y bautismos. Esta tierna figura de un niño en oración es el recuerdo perfecto para celebrar la fe de los más pequeños.",
+      "description": "Figura artesanal que representa a un niño en actitud de oración, transmitiendo inocencia y devoción. Perfecta para souvenirs de eventos religiosos infantiles.",
+      "detailedDescription": "Elaborada con yeso de alta calidad, cada detalle está cuidadosamente trabajado para capturar la ternura del momento. Disponible en acabado natural o con pintura personalizada.",
+      "dimensions": {
+        "height": "12 cm",
+        "width": "6 cm",
+        "depth": "5 cm",
+        "weight": "100 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado a pedido",
+      "features": [
+        "Diseño tierno y emotivo",
+        "Perfecto para primeras comuniones",
+        "Hecho a mano con dedicación",
+        "Base estable",
+        "Ideal para personalizar"
+      ],
+      "care": [
+        "Limpiar con paño seco suavemente",
+        "Mantener alejado de la humedad",
+        "Manipular con cuidado"
+      ]
+    },
+    {
+      "id": "BAU-003",
+      "name": "Cruz Decorativa con Flores",
+      "subcategories": ["bautismo-comunion"],
+      "images": [
+        "images/productos/bau-003-1.jpg",
+        "images/productos/bau-003-2.jpg"
+      ],
+      "context": "Hermosa cruz con detalles florales, perfecta para bautismos, comuniones o como elemento decorativo religioso en el hogar.",
+      "description": "Cruz artesanal decorada con delicados motivos florales. Una pieza elegante que combina fe y belleza natural.",
+      "detailedDescription": "Los detalles florales están cuidadosamente tallados a mano, creando una pieza única y especial. Ideal para regalar o decorar espacios sagrados en el hogar.",
+      "dimensions": {
+        "height": "18 cm",
+        "width": "12 cm",
+        "depth": "3 cm",
+        "weight": "180 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado a pedido",
+      "features": [
+        "Detalles florales tallados a mano",
+        "Diseño elegante y decorativo",
+        "Con soporte para colgar o apoyar",
+        "Perfecto para espacios religiosos",
+        "Acabado artesanal único"
+      ],
+      "care": [
+        "Limpiar con paño seco",
+        "Evitar golpes y caídas",
+        "Mantener en ambiente seco"
+      ]
+    },
+    {
+      "id": "CUM-001",
+      "name": "Bebé Dormido en Almohada",
+      "subcategories": ["cumpleanos-infantiles", "baby-shower-nacimiento"],
+      "images": [
+        "images/productos/bebe/001-1.jpg",
+        "images/productos/bebe/001-2.jpg",
+        "images/productos/bebe/001-3.jpg",
+        "images/productos/bebe/001-4.jpg",
+        "images/productos/bebe/001-5.jpg",
+        "images/productos/bebe/001-6.jpg"
+      ],
+      "context": "Ideal para baby showers, cumpleaños infantiles y nacimientos. Esta adorable figura de bebé dormido es perfecta para celebrar la llegada de un nuevo miembro a la familia.",
+      "description": "Figura artesanal de un bebé dormido plácidamente sobre una almohada. Captura la dulzura y ternura de los primeros meses de vida.",
+      "detailedDescription": "Cada detalle está cuidadosamente trabajado: desde las pequeñas manos hasta el rostro sereno del bebé. Una pieza emotiva y llena de amor, perfecta para regalar o decorar.",
+      "dimensions": {
+        "height": "8 cm",
+        "width": "12 cm",
+        "depth": "8 cm",
+        "weight": "120 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado a pedido",
+      "features": [
+        "Diseño ultra tierno y realista",
+        "Perfecto para baby showers",
+        "Detalles delicados trabajados a mano",
+        "Base de almohada texturizada",
+        "Ideal para souvenirs de nacimiento"
+      ],
+      "care": [
+        "Pieza muy delicada, manipular con extremo cuidado",
+        "Limpiar solo con pincel suave seco",
+        "Mantener en lugar seguro alejado de bordes"
+      ]
+    },
+    {
+      "id": "BOD-001",
+      "name": "Vela Decorativa Vestido de Novia",
+      "subcategories": ["fiestas-15-bodas"],
+      "images": [
+        "images/productos/bod-001-1.jpg",
+        "images/productos/bod-001-2.jpg"
+      ],
+      "context": "Elegante vela con forma de vestido de novia, perfecta para bodas, fiestas de 15 años o como detalle romántico. Un recuerdo único y sofisticado.",
+      "description": "Vela artesanal moldeada con forma de vestido elegante, con detalles de tela, encaje y adornos que imitan un vestido de gala.",
+      "detailedDescription": "Elaborada con cera de alta calidad y acabados meticulosos. Puede ser tanto decorativa como funcional. Los detalles del vestido están trabajados con precisión artesanal.",
+      "dimensions": {
+        "height": "20 cm",
+        "width": "10 cm",
+        "depth": "10 cm",
+        "weight": "200 gramos"
+      },
+      "material": "Cera artesanal",
+      "finish": "Natural / Colores personalizados",
+      "features": [
+        "Diseño elegante y sofisticado",
+        "Detalles de vestido realistas",
+        "Perfecta para eventos especiales",
+        "Puede usarse como vela o decoración",
+        "Colores personalizables"
+      ],
+      "care": [
+        "Si se usa como vela, supervisar durante el encendido",
+        "Mantener alejada del calor si es decorativa",
+        "Limpiar suavemente con paño seco"
+      ]
+    },
+    {
+      "id": "INF-001",
+      "name": "Delfín Saltarín",
+      "subcategories": ["animales-tiernos"],
+      "images": [
+        "images/productos/inf-001-1.jpg",
+        "images/productos/inf-001-2.jpg"
+      ],
+      "context": "Adorable figura de delfín perfecto para decoración infantil, cumpleaños con temática marina o como detalle tierno para los más pequeños.",
+      "description": "Figura artesanal de un delfín en posición de salto, con expresión alegre y detalles que capturan la magia de estos animales marinos.",
+      "detailedDescription": "Ideal para habitaciones infantiles, fiestas temáticas o como base para proyectos creativos de pintura con los niños.",
+      "dimensions": {
+        "height": "14 cm",
+        "width": "10 cm",
+        "depth": "6 cm",
+        "weight": "130 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado a pedido",
+      "features": [
+        "Diseño lúdico y divertido",
+        "Perfecto para decoración infantil",
+        "Base estable",
+        "Ideal para pintar con niños",
+        "Temática marina"
+      ],
+      "care": [
+        "Limpiar con paño seco",
+        "Supervisar uso con niños pequeños",
+        "Mantener en superficie estable"
+      ]
+    },
+    {
+      "id": "DEC-001",
+      "name": "Maceta con Flores Decorativa",
+      "subcategories": ["portaobjetos-floreros"],
+      "images": [
+        "images/productos/dec-001-1.jpg",
+        "images/productos/dec-001-2.jpg",
+        "images/productos/dec-001-3.jpg"
+      ],
+      "context": "Hermosa maceta decorativa con flores en relieve, perfecta para decorar cualquier espacio del hogar. Puede usarse como florero o simplemente como pieza ornamental.",
+      "description": "Maceta artesanal con diseño de flores talladas en relieve. Combina funcionalidad y belleza en una sola pieza.",
+      "detailedDescription": "Los detalles florales están trabajados con delicadeza, creando texturas y profundidad. Puede ser pintada en diversos colores para adaptarse a cualquier decoración.",
+      "dimensions": {
+        "height": "16 cm",
+        "width": "12 cm",
+        "depth": "12 cm",
+        "weight": "250 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado a pedido",
+      "features": [
+        "Diseño floral en relieve",
+        "Funcional como florero o decoración",
+        "Base estable y resistente",
+        "Personalizable con pintura",
+        "Acabado artesanal"
+      ],
+      "care": [
+        "Si se usa con flores naturales, usar recipiente interno para agua",
+        "Limpiar con paño húmedo suavemente",
+        "Secar bien después de limpiar"
+      ]
+    },
+    {
+      "id": "NAT-001",
+      "name": "Hongo Mágico del Bosque",
+      "subcategories": ["otono-bosque", "figuras-fantasia"],
+      "images": [
+        "images/productos/hongo/001-1.jpg",
+        "images/productos/hongo/001-2.jpg",
+        "images/productos/hongo/001-3.jpg"
+      ],
+      "context": "Encantadora figura de hongo con detalles que evocan la magia del bosque. Perfecta para crear ambientes naturales y rústicos en tu hogar.",
+      "description": "Figura artesanal de hongo con textura natural y detalles orgánicos. Transmite la esencia del bosque y la naturaleza.",
+      "detailedDescription": "Inspirada en los hongos silvestres del bosque, esta pieza captura la belleza rústica de la naturaleza. Ideal para decoración con temática natural o como elemento en composiciones más amplias.",
+      "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado con colores tierra",
+      "features": [
+        "Diseño inspirado en la naturaleza",
+        "Textura orgánica realista",
+        "Perfecto para decoración rústica",
+        "Acabados en colores tierra disponibles",
+        "Pieza única artesanal"
+      ],
+      "care": [
+        "Limpiar con pincel suave",
+        "Mantener en ambiente seco",
+        "Ideal para espacios interiores"
+      ]
+    }
+  ],
+  "categories": {
+    "eventos": {
+      "name": "Eventos y Celebraciones",
+      "description": "Souvenirs perfectos para tus momentos especiales",
+      "icon": "🎉"
+    },
+    "religiosos": {
+      "name": "Religiosos y Espirituales",
+      "description": "Para tus momentos de fe y celebración",
+      "icon": "🙏"
+    },
+    "decorativos": {
+      "name": "Decorativos y Funcionales",
+      "description": "Belleza y utilidad en cada pieza",
+      "icon": "🎨"
+    },
+    "infantil": {
+      "name": "Infantil y Lúdico",
+      "description": "Magia y ternura para los más pequeños",
+      "icon": "🧸"
+    },
+    "naturaleza": {
+      "name": "Temporada y Naturaleza",
+      "description": "Inspirados en la belleza natural",
+      "icon": "🌿"
+    }
+  },
+  "subcategories": {
+    "cumpleanos-infantiles": {
+      "name": "Cumpleaños Infantiles",
+      "parent": "eventos",
+      "description": "Bebés dormidos, zapatitos, animalitos tiernos",
+      "icon": "🎂"
+    },
+    "fiestas-15-bodas": {
+      "name": "Fiestas de 15 / Bodas",
+      "parent": "eventos",
+      "description": "Velas con forma de vestido, figuras elegantes",
+      "icon": "💒"
+    },
+    "baby-shower-nacimiento": {
+      "name": "Baby Shower / Nacimiento",
+      "parent": "eventos",
+      "description": "Bebés, cunas, zapatitos, ositos",
+      "icon": "🍼"
+    },
+    "aniversarios-romanticos": {
+      "name": "Aniversarios / Románticos",
+      "parent": "eventos",
+      "description": "Corazones, velas decorativas, figuras con lazo",
+      "icon": "❤️"
+    },
+    "bautismo-comunion": {
+      "name": "Bautismo / Comunión",
+      "parent": "religiosos",
+      "description": "Ángeles, niños rezando, cruces decorativas",
+      "icon": "👼"
+    },
+    "navidad-pascuas": {
+      "name": "Navidad / Pascuas",
+      "parent": "religiosos",
+      "description": "Figuras angelicales, velas festivas",
+      "icon": "🎄"
+    },
+    "espiritualidad-general": {
+      "name": "Espiritualidad General",
+      "parent": "religiosos",
+      "description": "Figuras de meditación, símbolos de paz",
+      "icon": "🕉️"
+    },
+    "velas-artisticas": {
+      "name": "Velas Artísticas",
+      "parent": "decorativos",
+      "description": "Vestidos, formas abstractas, diseños únicos",
+      "icon": "🕯️"
+    },
+    "portaobjetos-floreros": {
+      "name": "Portaobjetos / Floreros",
+      "parent": "decorativos",
+      "description": "Macetas con flores, recipientes decorativos",
+      "icon": "🌸"
+    },
+    "organizadores": {
+      "name": "Organizadores",
+      "parent": "decorativos",
+      "description": "Porta pinceles, bases decorativas",
+      "icon": "✏️"
+    },
+    "animales-tiernos": {
+      "name": "Animales Tiernos",
+      "parent": "infantil",
+      "description": "Delfines, ositos, conejos",
+      "icon": "🐬"
+    },
+    "figuras-fantasia": {
+      "name": "Figuras de Fantasía",
+      "parent": "infantil",
+      "description": "Hongos, formas mágicas",
+      "icon": "🍄"
+    },
+    "decoracion-infantil": {
+      "name": "Decoración Infantil",
+      "parent": "infantil",
+      "description": "Elementos suaves, formas redondeadas",
+      "icon": "🌙"
+    },
+    "primavera-jardin": {
+      "name": "Primavera / Jardín",
+      "parent": "naturaleza",
+      "description": "Floreros, macetas, motivos florales",
+      "icon": "🌺"
+    },
+    "otono-bosque": {
+      "name": "Otoño / Bosque",
+      "parent": "naturaleza",
+      "description": "Hongos, bases rústicas, texturas naturales",
+      "icon": "🍂"
+    }
+  }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Producto - Gracie Souvenirs" id="metaDescription">
+    <meta name="keywords" content="souvenirs artesanales, figuras de yeso, velas artesanales" id="metaKeywords">
+    <title>Producto | Gracie Souvenirs</title>
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/producto.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo-container">
+                    <div class="logo"><img src="images/logo.png" alt="Gracie Souvenirs Logo"></div>
+                    <div>
+                        <div class="logo-text">Gracie Souvenirs</div>
+                        <div class="logo-subtitle">Artesanías con amor</div>
+                    </div>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#eventos">Eventos</a></li>
+                    <li><a href="index.html#religiosos">Religiosos</a></li>
+                    <li><a href="index.html#decorativos">Decorativos</a></li>
+                    <li><a href="index.html#infantil">Infantil</a></li>
+                    <li><a href="index.html#naturaleza">Naturaleza</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumbs" id="breadcrumbs"></div>
+
+    <div id="loadingState" class="loading">Cargando producto...</div>
+    <div id="errorState" class="error-message" style="display: none;"></div>
+    <div id="productContent" style="display: none;"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Métodos de Pago y Envíos</h3>
+                <p>💳 Efectivo</p>
+                <p>💳 Transferencia bancaria</p>
+                <p>📦 Envíos a todo el país</p>
+                <p>🚚 Retiro en Malvinas Argentinas</p>
+                <p>📍 Malvinas Argentinas, GBA Norte, Argentina</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📱 WhatsApp: <a href="https://wa.me/5491161486521">+54 9 11 6148-6521</a></p>
+                <p>✉️ Consultas por WhatsApp</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1AD6fHpaRF/" target="_blank">📘</a>
+                    <a href="https://wa.me/5491161486521" target="_blank">💬</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gracie Souvenirs - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <a href="#" class="whatsapp-float" id="whatsappFloat"></a>
+
+    <script>
+        let currentProduct = null;
+        let currentImageIndex = 0;
+        let autoRotateInterval = null;
+
+        // Obtener el ID del producto de la URL
+        function getProductIdFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+
+        // Cargar datos del producto desde JSON
+        async function loadProduct() {
+            const productId = getProductIdFromURL();
+            
+            if (!productId) {
+                showError('No se especificó un producto. <a href="index.html">Volver al inicio</a>');
+                return;
+            }
+
+            try {
+                const response = await fetch('products.json');
+                const data = await response.json();
+                
+                const product = data.products.find(p => p.id === productId);
+                
+                if (!product) {
+                    showError(`Producto "${productId}" no encontrado. <a href="index.html">Volver al inicio</a>`);
+                    return;
+                }
+
+                currentProduct = product;
+                renderProduct(product, data.subcategories);
+                
+            } catch (error) {
+                showError('Error al cargar el producto. Por favor, intenta nuevamente.');
+                console.error('Error:', error);
+            }
+        }
+
+        // Mostrar error
+        function showError(message) {
+            document.getElementById('loadingState').style.display = 'none';
+            document.getElementById('errorState').innerHTML = message;
+            document.getElementById('errorState').style.display = 'block';
+        }
+
+        // Renderizar producto
+        function renderProduct(product, subcategories) {
+            // Ocultar loading
+            document.getElementById('loadingState').style.display = 'none';
+            document.getElementById('productContent').style.display = 'block';
+
+            // Actualizar título y meta
+            document.title = `${product.name} - ${product.id} | Gracie Souvenirs`;
+            document.getElementById('metaDescription').content = product.context;
+
+            // Breadcrumbs - usar la primera subcategoría del array
+            const subcategoryId = product.subcategories[0];
+            const subcategory = subcategories[subcategoryId];
+            document.getElementById('breadcrumbs').innerHTML = `
+                <a href="index.html">Inicio</a>
+                <span>/</span>
+                <a href="categoria.html?cat=${subcategoryId}">${subcategory.name}</a>
+                <span>/</span>
+                <span style="color: var(--tierra-oscuro); font-weight: 600;">${product.name} - ${product.id}</span>
+            `;
+
+            // Contenido del producto
+            document.getElementById('productContent').innerHTML = `
+                <div class="product-detail">
+                    <div class="product-layout">
+                        <div class="product-images">
+                            <div class="thumbnails" id="thumbnails"></div>
+                            <div class="main-image-container" id="mainImageContainer"></div>
+                        </div>
+                        
+                        <div class="product-info-section">
+                            <div>
+                                <h1 class="product-title">${product.name}</h1>
+                                <div class="product-code-display">Código: ${product.id}</div>
+                            </div>
+                            
+                            <div class="product-context">
+                                <h3>💝 Ideal para:</h3>
+                                <p>${product.context}</p>
+                            </div>
+                            
+                            <button class="cta-button" onclick="consultWhatsApp()">
+                                Consultar por WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-details-full">
+                        <div class="details-section">
+                            <h2>📋 Descripción Detallada</h2>
+                            <p>${product.description}</p>
+                            <p>${product.detailedDescription}</p>
+                        </div>
+                        
+                        <div class="details-section">
+                            <h2>📏 Dimensiones y Características</h2>
+                            <div class="details-grid">
+                                <div class="detail-item">
+                                    <strong>Alto</strong>
+                                    <span>${product.dimensions.height}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Ancho</strong>
+                                    <span>${product.dimensions.width}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Profundidad</strong>
+                                    <span>${product.dimensions.depth}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Peso aproximado</strong>
+                                    <span>${product.dimensions.weight}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Material</strong>
+                                    <span>${product.material}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Acabado</strong>
+                                    <span>${product.finish}</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="details-section">
+                            <h2>✨ Características Especiales</h2>
+                            <ul class="features-list">
+                                ${product.features.map(f => `<li>${f}</li>`).join('')}
+                            </ul>
+                        </div>
+                        
+                        <div class="details-section">
+                            <h2>🎨 Cuidados y Recomendaciones</h2>
+                            ${product.care.map(c => `<p>• ${c}</p>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            renderImages(product.images);
+            updateWhatsAppLink();
+        }
+
+        // Renderizar imágenes
+        function renderImages(images) {
+            const thumbnailsContainer = document.getElementById('thumbnails');
+            const mainContainer = document.getElementById('mainImageContainer');
+
+            thumbnailsContainer.innerHTML = images.map((img, index) => `
+                <div class="thumbnail ${index === 0 ? 'active' : ''}" onclick="selectImage(${index})">
+                    <img src="${img}" alt="Vista ${index + 1}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23f5f1e8%22 width=%22100%22 height=%22100%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2220%22 text-anchor=%22middle%22 dy=%22.3em%22%3E${index + 1}%3C/text%3E%3C/svg%3E'">
+                </div>
+            `).join('');
+
+            mainContainer.innerHTML = images.map((img, index) => `
+                <img src="${img}" alt="${currentProduct.name}" class="main-image ${index === 0 ? '' : 'hidden'}" data-index="${index}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22500%22%3E%3Crect fill=%22%23f5f1e8%22 width=%22500%22 height=%22500%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 text-anchor=%22middle%22 dy=%22.3em%22%3EImagen%3C/text%3E%3C/svg%3E'">
+            `).join('');
+
+            startAutoRotate();
+        }
+
+        // Seleccionar imagen
+        function selectImage(index) {
+            clearInterval(autoRotateInterval);
+            currentImageIndex = index;
+
+            document.querySelectorAll('.thumbnail').forEach((thumb, i) => {
+                thumb.classList.toggle('active', i === index);
+            });
+
+            document.querySelectorAll('.main-image').forEach((img, i) => {
+                img.classList.toggle('hidden', i !== index);
+            });
+
+            setTimeout(startAutoRotate, 10000);
+        }
+
+        // Auto-rotar imágenes
+        function startAutoRotate() {
+            if (!currentProduct || currentProduct.images.length <= 1) return;
+            
+            clearInterval(autoRotateInterval);
+            autoRotateInterval = setInterval(() => {
+                currentImageIndex = (currentImageIndex + 1) % currentProduct.images.length;
+                selectImage(currentImageIndex);
+            }, 5000);
+        }
+
+        // WhatsApp
+        function consultWhatsApp() {
+            const message = encodeURIComponent(
+                `Hola! Quisiera consultar sobre el producto:\n${currentProduct.name} - ${currentProduct.id}`
+            );
+            window.open(`https://wa.me/5491161486521?text=${message}`, '_blank');
+        }
+
+        function updateWhatsAppLink() {
+            const message = encodeURIComponent(
+                `Hola! Quisiera consultar sobre el producto:\n${currentProduct.name} - ${currentProduct.id}`
+            );
+            document.getElementById('whatsappFloat').href = `https://wa.me/5491161486521?text=${message}`;
+        }
+
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', loadProduct);
+    </script>
+</body>
+</html>
