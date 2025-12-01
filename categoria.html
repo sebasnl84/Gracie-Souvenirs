@@ -185,9 +185,10 @@
         // Renderizar productos
         function renderProducts(products) {
             const grid = document.getElementById('productsGrid');
+            const subcategoryId = getSubcategoryFromURL();
             
             grid.innerHTML = products.map(product => `
-                <a href="producto.html?id=${product.id}" class="product-card">
+                <a href="producto.html?id=${product.id}" class="product-card" onclick="localStorage.setItem('lastSubcategory', '${subcategoryId}')">
                     <div class="product-image-container" data-product-id="${product.id}">
                         ${product.images.map((img, index) => `
                             <img src="${img}" 

@@ -101,7 +101,7 @@
       ]
     },
     {
-      "id": "CUM-001",
+      "id": "BEB-001",
       "name": "Bebé Dormido en Almohada",
       "subcategories": ["cumpleanos-infantiles", "baby-shower-nacimiento"],
       "images": [
@@ -170,15 +170,16 @@
     },
     {
       "id": "INF-001",
-      "name": "Delfín Saltarín",
-      "subcategories": ["animales-tiernos"],
+      "name": "Cuenco con Delfines",
+      "subcategories": ["animales-tiernos", "decoracion-infantil", "organizadores", "portaobjetos-floreros"],
       "images": [
-        "images/productos/inf-001-1.jpg",
-        "images/productos/inf-001-2.jpg"
+        "images/productos/cuenco_delfin/001-1.jpg",
+        "images/productos/cuenco_delfin/001-2.jpg",
+        "images/productos/cuenco_delfin/001-3.jpg"
       ],
-      "context": "Adorable figura de delfín perfecto para decoración infantil, cumpleaños con temática marina o como detalle tierno para los más pequeños.",
-      "description": "Figura artesanal de un delfín en posición de salto, con expresión alegre y detalles que capturan la magia de estos animales marinos.",
-      "detailedDescription": "Ideal para habitaciones infantiles, fiestas temáticas o como base para proyectos creativos de pintura con los niños.",
+      "context": "Cuenco decorativo con relieve de delfines, ideal para ambientaciones costeras o como pieza temática.",
+      "description": "Cuenco blanco de yeso con diseño en relieve de delfines saltando entre olas. Detalles marinos delicados.",
+      "detailedDescription": "Esta pieza artesanal evoca la frescura del mar con su diseño en relieve de delfines y elementos acuáticos. Su forma de cuenco permite múltiples usos: como portaobjetos, base para velas, dulcero o simplemente como elemento decorativo. El acabado blanco resalta los detalles escultóricos y permite personalización con pintura. Ideal para espacios con temática marina, infantil o natural.",
       "dimensions": {
         "height": "14 cm",
         "width": "10 cm",
@@ -188,10 +189,9 @@
       "material": "Yeso artesanal",
       "finish": "Natural / Pintado a pedido",
       "features": [
-        "Diseño lúdico y divertido",
-        "Perfecto para decoración infantil",
-        "Base estable",
-        "Ideal para pintar con niños",
+        "Relieve detallado de delfines y motivos acuáticos",
+        "Forma de cuenco funcional y decorativa",
+        "Acabado blanco listo para pintar o usar al natural",
         "Temática marina"
       ],
       "care": [
@@ -201,17 +201,18 @@
       ]
     },
     {
-      "id": "DEC-001",
-      "name": "Maceta con Flores Decorativa",
-      "subcategories": ["portaobjetos-floreros"],
+      "id": "MON-001",
+      "name": "Porta-objetos / Florero con Forma de Moño",
+      "subcategories": ["portaobjetos-floreros", "decoracion-infantil", "organizadores", "fiestas-15-bodas"],
       "images": [
-        "images/productos/dec-001-1.jpg",
-        "images/productos/dec-001-2.jpg",
-        "images/productos/dec-001-3.jpg"
+        "images/productos/monio/001-1.jpg",
+        "images/productos/monio/001-2.jpg",
+        "images/productos/monio/001-3.jpg",
+        "images/productos/monio/001-4.jpg"
       ],
-      "context": "Hermosa maceta decorativa con flores en relieve, perfecta para decorar cualquier espacio del hogar. Puede usarse como florero o simplemente como pieza ornamental.",
-      "description": "Maceta artesanal con diseño de flores talladas en relieve. Combina funcionalidad y belleza en una sola pieza.",
-      "detailedDescription": "Los detalles florales están trabajados con delicadeza, creando texturas y profundidad. Puede ser pintada en diversos colores para adaptarse a cualquier decoración.",
+      "context": "Moño decorativo de yeso con textura realista, ideal para ambientaciones románticas, infantiles o como base creativa.",
+      "description": "Figura de moño blanco con pliegues detallados que imitan tela. Puede usarse como contenedor o adorno.",
+      "detailedDescription": "Esta pieza artesanal en forma de moño destaca por su realismo textural: los pliegues y curvas evocan la suavidad de una cinta, aunque está hecha en yeso. Su interior hueco permite utilizarla como pequeño contenedor, base para dulces, portaobjetos o simplemente como adorno. Ideal para decoraciones delicadas, regalos personalizados o composiciones con temática romántica o infantil.",
       "dimensions": {
         "height": "16 cm",
         "width": "12 cm",
@@ -221,11 +222,10 @@
       "material": "Yeso artesanal",
       "finish": "Natural / Pintado a pedido",
       "features": [
-        "Diseño floral en relieve",
-        "Funcional como florero o decoración",
-        "Base estable y resistente",
-        "Personalizable con pintura",
-        "Acabado artesanal"
+        "Diseño de moño con textura realista",
+        "Interior hueco para uso funcional o decorativo",
+        "Acabado blanco listo para pintar",
+        "Pieza artesanal versátil y elegante"
       ],
       "care": [
         "Si se usa con flores naturales, usar recipiente interno para agua",
@@ -265,7 +265,199 @@
         "Mantener en ambiente seco",
         "Ideal para espacios interiores"
       ]
-    }
+    },
+    {
+      "id": "NEN-001",
+      "name": "Nena con Canasto",
+      "subcategories": ["aniversarios-romanticos", "portaobjetos-floreros", "decoracion-infantil", "primavera-jardin"],
+      "images": [
+        "images/productos/nena_canasto/001-1.jpg",
+        "images/productos/nena_canasto/001-2.jpg",
+        "images/productos/nena_canasto/001-3.jpg"
+      ],
+      "context": "Tierna figura infantil con maceta tejida que transmite calidez y nostalgia. Ideal para decorar rincones con encanto y naturaleza.",
+      "description": "Figura decorativa de niño con osito, acompañada de una maceta estilo canasta con planta de hojas en forma de corazón. Evoca ternura y conexión con lo natural.",
+      "detailedDescription": "Esta pieza combina arte y jardinería en una composición encantadora: un niño rosado abrazando su osito junto a una maceta tejida que alberga una planta de tallos rojizos y hojas acorazonadas. Perfecta para ambientaciones románticas, infantiles o naturales, aporta un toque de dulzura y vida a cualquier espacio.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado con Canasto con suculentas",
+      "features": [        
+        "Perfecto para decoración rústica",        
+        "Pieza única artesanal"
+      ],
+      "care": [
+        "Limpiar con pincel suave",
+        "Mantener en ambiente seco",
+        "Ideal para espacios interiores"
+      ]
+    },
+    {
+      "id": "COR-001",
+      "name": "Contenedor con forma de Corazón",
+      "subcategories": ["aniversarios-romanticos", "portaobjetos-floreros", "decoracion-infantil", "organizadores"],
+      "images": [
+        "images/productos/contenedor_corazon/001-1.jpg",
+        "images/productos/contenedor_corazon/001-2.jpg"
+      ],
+
+      "context": "Elemento decorativo geométrico de estilo minimalista, ideal para ambientaciones modernas con toque natural.",
+      "description": "Contenedor blanco de líneas angulares y diseño contemporáneo con forma de corazón.",
+      "detailedDescription": "Utilizalo como maceta minimalista para suculentas o plantas pequeñas. Su forma geométrica en corazón y color blanco lo hacen ideal para destacar el verde natural de las plantas, creando un contraste elegante. También como base para velas aromáticas en rincones de relajación o spa casero. Es perfecto para regalar en ocasiones especiales como aniversarios, San Valentín o Día de la Madre, ya que transmite afecto de forma sutil y contemporánea.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado",
+      "features": [        
+        "Perfecto para decoración rústica",        
+        "Pieza única artesanal"
+      ],
+      "care": [
+        "Limpiar con pincel suave",
+        "Mantener en ambiente seco",
+        "Ideal para espacios interiores"
+      ]
+    },
+    {
+      "id": "VEL-001",
+      "name": "Vela con forma de Cubo",
+      "subcategories": ["aniversarios-romanticos", "velas-artísticas", "fiestas-15-bodas"],
+      "images": [
+        "images/productos/vela_cubo/001-1.jpg",
+        "images/productos/vela_cubo/001-2.jpg"
+      ],
+      "context": "Vela artesanal con textura llamativa y opción sin pintar, ideal para ambientaciones cálidas y naturales.",
+      "description": "Vela cuadrada de superficie rugosa en tono rojo vibrante, con versión sin color y aroma incorporado.",
+      "detailedDescription": "Esta vela combina diseño artístico y funcionalidad: su forma cuadrada y textura orgánica la hacen destacar como pieza decorativa, mientras que su versión sin pintar ofrece una estética más neutra y versátil. Además, al ser aromática, aporta una experiencia sensorial completa, perfecta para crear ambientes acogedores, relajantes o festivos. Ideal para decorar mesas, rincones especiales o como regalo artesanal.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Cera artesanal",
+      "finish": "Natural / Pintado",
+      "features": [
+        "Diseño texturado que aporta carácter",
+        "Disponible en versión sin pintar",
+        "Aromática, ideal para crear ambientes cálidos",
+        "Pieza única hecha a mano"
+      ],
+      "care": [
+        "Limpiar con pincel suave o paño seco",
+        "Evitar exposición directa al sol o humedad",
+        "No encender en superficies inestables",
+        "Ideal para espacios interiores"
+      ]
+    },
+    {
+      "id": "BDC-001",
+      "name": "Bandeja Circular",
+      "subcategories": ["aniversarios-romanticos", "fiestas-15-bodas", "decoracion-infantil", "organizadores"],
+      "images": [
+        "images/productos/bandeja_circular/001-1.jpg",
+        "images/productos/bandeja_circular/001-2.jpg",
+        "images/productos/bandeja_circular/001-3.jpg",
+        "images/productos/bandeja_circular/001-4.jpg"
+      ],
+      "context": "Base decorativa circular con borde perlado, ideal para composiciones artesanales o como soporte elegante.",
+      "description": "Pieza de yeso blanco con forma redonda y borde texturado tipo cuentas. Versátil y delicada.",
+      "detailedDescription": "Esta base artesanal destaca por su diseño simple pero refinado: una forma circular con borde de cuentas que aporta textura y elegancia. Puede utilizarse como soporte para velas, figuras pequeñas, macetas o como parte de una composición decorativa. Su acabado blanco permite personalización con pintura o técnicas mixtas, adaptándose a estilos rústicos, románticos o minimalistas.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado",
+      "features": [        
+        "Diseño circular con borde perlado",
+        "Acabado blanco listo para pintar o usar al natural",
+        "Ideal como base decorativa o soporte",
+        "Pieza artesanal única"
+      ],
+      "care": [
+        "Limpiar con pincel suave",
+        "Mantener en ambiente seco",
+        "Ideal para espacios interiores"
+      ]
+    },
+    {
+      "id": "BDC-002",
+      "name": "Bandeja Ovalada",
+      "subcategories": ["aniversarios-romanticos", "fiestas-15-bodas", "decoracion-infantil", "organizadores"],
+      "images": [
+        "images/productos/bandeja_ovalada/001-1.jpg",
+        "images/productos/bandeja_ovalada/001-2.jpg",
+        "images/productos/bandeja_ovalada/001-3.jpg",
+        "images/productos/bandeja_ovalada/001-4.jpg"
+      ],
+      "context": "Placa decorativa ovalada con borde perlado, ideal para personalizar o usar como base elegante.",
+      "description": "Pieza de yeso blanco con forma oval y borde de cuentas. Versátil para decoración o intervenciones creativas.",
+      "detailedDescription": "Esta placa artesanal destaca por su forma ovalada y borde texturado tipo perlas, que aporta delicadeza y estilo. Su superficie lisa permite personalización con pintura, grabado o técnicas mixtas. Puede utilizarse como base para figuras, soporte de velas, cartel decorativo o elemento central en composiciones temáticas. Su diseño neutro se adapta a estilos románticos, rústicos o modernos.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado",
+      "features": [        
+        "Diseño ovalado con borde perlado",
+        "Superficie lisa ideal para pintar o intervenir",
+        "Puede usarse como base, cartel o soporte decorativo",
+        "Pieza artesanal hecha a mano"
+      ],
+      "care": [
+        "Limpiar con pincel suave",
+        "Mantener en ambiente seco",
+        "Ideal para espacios interiores"
+      ]
+    },
+    {
+      "id": "CRO-001",
+      "name": "Crocs con osito feliz",
+      "subcategories": ["decoracion-infantil", "organizadores", "portaobjetos-floreros", "animales-tiernos", "baby-shower-nacimiento"],
+      "images": [
+        "images/productos/crocs/001-1.jpg",
+        "images/productos/crocs/001-2.jpg",
+        "images/productos/crocs/001-3.jpg",
+        "images/productos/crocs/001-4.jpg",
+        "images/productos/crocs/001-5.jpg"
+      ],
+       "context": "Figura decorativa en forma de zapato con personaje infantil, ideal para ambientaciones lúdicas o temáticas.",
+       "description": "Zapato estilo Crocs en yeso blanco con detalles en relieve: personaje con orejas redondeadas, zanahoria y botones.",
+       "detailedDescription": "Esta pieza artesanal fusiona lo cotidiano con lo fantástico: un zapato tipo Crocs convertido en figura decorativa, acompañado por un personaje infantil de orejas redondeadas y elementos como una zanahoria y botones. Su diseño lúdico la hace ideal para espacios infantiles, temáticas de animales o como base para intervenciones creativas con pintura. Puede utilizarse como adorno, portaobjetos o pieza central en composiciones divertidas.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado",
+      "features": [        
+        "Diseño en forma de zapato con personaje infantil",
+        "Relieves decorativos: zanahoria, flores, botones, orejas redondeadas",
+        "Acabado blanco listo para pintar",
+        "Pieza artesanal única con estilo lúdico"
+      ],
+      "care": [
+        "Limpiar con pincel suave",
+        "Mantener en ambiente seco",
+        "Ideal para espacios interiores"
+      ]
+    }      
   ],
   "categories": {
     "eventos": {

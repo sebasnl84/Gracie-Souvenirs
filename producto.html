@@ -126,8 +126,14 @@
             document.title = `${product.name} - ${product.id} | Gracie Souvenirs`;
             document.getElementById('metaDescription').content = product.context;
 
-            // Breadcrumbs - usar la primera subcategoría del array
-            const subcategoryId = product.subcategories[0];
+            // Breadcrumbs - usar la subcategoría guardada o la primera del array como fallback
+            let subcategoryId = localStorage.getItem('lastSubcategory');
+            
+            // Validar que la subcategoría guardada existe en el producto
+            if (!subcategoryId || !product.subcategories.includes(subcategoryId)) {
+                subcategoryId = product.subcategories[0];
+            }
+            
             const subcategory = subcategories[subcategoryId];
             document.getElementById('breadcrumbs').innerHTML = `
                 <a href="index.html">Inicio</a>
