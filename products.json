@@ -3,7 +3,7 @@
     {
       "id": "BAU-001",
       "name": "Ángel de la Guarda",
-      "subcategories": ["bautismo-comunion"],
+      "subcategories": ["bautismo-comunion", "decoracion-infantil", "espiritualidad-general"],
       "images": [
         "images/productos/angel/001-1.jpg",
         "images/productos/angel/001-2.jpg"
@@ -38,11 +38,12 @@
     {
       "id": "BAU-002",
       "name": "Niño Rezando",
-      "subcategories": ["bautismo-comunion"],
+      "subcategories": ["bautismo-comunion", "decoracion-infantil", "espiritualidad-general"],
       "images": [
-        "images/productos/bau-002-1.jpg",
-        "images/productos/bau-002-2.jpg",
-        "images/productos/bau-002-3.jpg"
+        "images/productos/ninio_rezando/001-1.jpg",
+        "images/productos/ninio_rezando/001-2.jpg",
+        "images/productos/ninio_rezando/001-3.jpg",
+        "images/productos/ninio_rezando/001-4.jpg"
       ],
       "context": "Ideal para primeras comuniones y bautismos. Esta tierna figura de un niño en oración es el recuerdo perfecto para celebrar la fe de los más pequeños.",
       "description": "Figura artesanal que representa a un niño en actitud de oración, transmitiendo inocencia y devoción. Perfecta para souvenirs de eventos religiosos infantiles.",
@@ -69,16 +70,50 @@
       ]
     },
     {
-      "id": "BAU-003",
-      "name": "Cruz Decorativa con Flores",
-      "subcategories": ["bautismo-comunion"],
+      "id": "VES-002",
+      "name": "Vela con Forma de Vestido de Gala Elegante",
+      "subcategories": ["fiestas-15-bodas", "aniversarios-romanticos", "velas-artísticas"],
       "images": [
-        "images/productos/bau-003-1.jpg",
-        "images/productos/bau-003-2.jpg"
+        "images/productos/vestido_gala_elegante/001-1.jpg",
+        "images/productos/vestido_gala_elegante/001-2.jpg",
+        "images/productos/vestido_gala_elegante/001-3.jpg"
       ],
-      "context": "Hermosa cruz con detalles florales, perfecta para bautismos, comuniones o como elemento decorativo religioso en el hogar.",
-      "description": "Cruz artesanal decorada con delicados motivos florales. Una pieza elegante que combina fe y belleza natural.",
-      "detailedDescription": "Los detalles florales están cuidadosamente tallados a mano, creando una pieza única y especial. Ideal para regalar o decorar espacios sagrados en el hogar.",
+      "context": "Vela decorativa con forma de vestido de gala, ideal para ambientaciones elegantes, temáticas de princesas o eventos especiales.",
+      "description": "Vela artesanal en forma de vestido azul con detalles en relieve que imitan pliegues y textura de tela.",
+      "detailedDescription": "Esta vela combina diseño artístico y funcionalidad: su forma de vestido de gala, con pliegues marcados y textura realista, la convierte en una pieza decorativa única. El color azul aporta serenidad y distinción, ideal para celebraciones como cumpleaños, quince años, bodas o como regalo temático. Su mecha superior permite encenderla, aunque su valor decorativo la hace perfecta como centro de mesa o adorno principal.",
+      "dimensions": {
+        "height": "18 cm",
+        "width": "12 cm",
+        "depth": "3 cm",
+        "weight": "180 gramos"
+      },
+      "material": "Cera artesanal",
+      "finish": "Natural / Pintado a pedido",
+      "features": [
+        "Diseño en forma de vestido de gala",
+        "Textura detallada que imita tela",
+        "Color azul vibrante y versión sin pintar disponible",
+        "Función aromática para ambientar espacios",
+        "Pieza artesanal única, ideal para eventos temáticos"
+      ],
+      "care": [
+        "Limpiar con pincel suave o paño seco",
+        "Evitar exposición directa al sol o humedad",
+        "No encender en superficies inestables",
+        "Ideal para espacios interiores"
+      ]
+    },
+    {
+      "id": "VES-003",
+      "name": "Vestido de Gala Elegante",
+      "subcategories": ["fiestas-15-bodas", "aniversarios-romanticos"],
+      "images": [
+        "images/productos/vestido_gala_elegante_yeso/001-1.jpg",
+        "images/productos/vestido_gala_elegante_yeso/001-2.jpg"
+      ],
+      "context": "Figura de yeso con forma de vestido de gala, ideal para ambientaciones elegantes, temáticas de princesas o eventos especiales.",
+      "description": "Figura de yeso con forma de vestido con detalles en relieve que imitan pliegues y textura de tela.",
+      "detailedDescription": "Esta figura combina diseño artístico y funcionalidad: su forma de vestido de gala, con pliegues marcados y textura realista, la convierte en una pieza decorativa única. Ideal para celebraciones como cumpleaños, quince años, bodas o como regalo temático. Perfecta como centro de mesa o adorno principal.",
       "dimensions": {
         "height": "18 cm",
         "width": "12 cm",
@@ -88,18 +123,17 @@
       "material": "Yeso artesanal",
       "finish": "Natural / Pintado a pedido",
       "features": [
-        "Detalles florales tallados a mano",
-        "Diseño elegante y decorativo",
-        "Con soporte para colgar o apoyar",
-        "Perfecto para espacios religiosos",
-        "Acabado artesanal único"
+        "Diseño en forma de vestido de gala",
+        "Textura detallada que imita tela",        
+        "Función aromática para ambientar espacios",
+        "Pieza artesanal única, ideal para eventos temáticos"
       ],
       "care": [
-        "Limpiar con paño seco",
-        "Evitar golpes y caídas",
-        "Mantener en ambiente seco"
+        "Limpiar con paño seco suavemente",
+        "Mantener alejado de la humedad",
+        "Manipular con cuidado"
       ]
-    },
+    },    
     {
       "id": "BEB-001",
       "name": "Bebé Dormido en Almohada",
@@ -137,12 +171,12 @@
       ]
     },
     {
-      "id": "BOD-001",
+      "id": "VES-001",
       "name": "Vela Decorativa Vestido de Novia",
-      "subcategories": ["fiestas-15-bodas"],
+      "subcategories": ["fiestas-15-bodas", "aniversarios-romanticos", "velas-artísticas"],
       "images": [
-        "images/productos/bod-001-1.jpg",
-        "images/productos/bod-001-2.jpg"
+        "images/productos/vestido_gala/001-1.jpg",
+        "images/productos/vestido_gala/001-2.jpg"
       ],
       "context": "Elegante vela con forma de vestido de novia, perfecta para bodas, fiestas de 15 años o como detalle romántico. Un recuerdo único y sofisticado.",
       "description": "Vela artesanal moldeada con forma de vestido elegante, con detalles de tela, encaje y adornos que imitan un vestido de gala.",
@@ -160,6 +194,10 @@
         "Detalles de vestido realistas",
         "Perfecta para eventos especiales",
         "Puede usarse como vela o decoración",
+        "Detalles en relieve con arabescos y pliegues",
+        "Flor decorativa con strass en la cintura",
+        "Color rosa vibrante y versión sin pintar disponible",
+        "Función aromática para ambientar espacios",
         "Colores personalizables"
       ],
       "care": [
@@ -169,13 +207,48 @@
       ]
     },
     {
+      "id": "VES-004",
+      "name": "Vestido de Novia",
+      "subcategories": ["fiestas-15-bodas", "aniversarios-romanticos"],
+      "images": [
+        "images/productos/vestido_gala_yeso/001-1.jpg",
+        "images/productos/vestido_gala_yeso/001-2.jpg"
+      ],
+      "context": "Figura de yeso con forma de vestido de novia, perfecta para bodas, fiestas de 15 años o como detalle romántico. Un recuerdo único y sofisticado.",
+      "description": "Figura de yeso moldeada con forma de vestido elegante, con detalles de tela, encaje y adornos que imitan un vestido de gala.",
+      "detailedDescription": "Elaborada con yeso de alta calidad y acabados meticulosos. Puede ser tanto decorativa como funcional. Los detalles del vestido están trabajados con precisión artesanal.",
+      "dimensions": {
+        "height": "20 cm",
+        "width": "10 cm",
+        "depth": "10 cm",
+        "weight": "200 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Colores personalizados",
+      "features": [
+        "Diseño elegante y sofisticado",
+        "Detalles de vestido realistas",
+        "Perfecta para eventos especiales",       
+        "Detalles en relieve con arabescos y pliegues",
+        "Flor decorativa con strass en la cintura",        
+        "Colores personalizables"
+      ],
+      "care": [
+        "Pieza muy delicada, manipular con extremo cuidado",
+        "Limpiar solo con pincel suave seco",
+        "Mantener en lugar seguro alejado de bordes"
+      ]
+    },    
+    {
       "id": "INF-001",
       "name": "Cuenco con Delfines",
       "subcategories": ["animales-tiernos", "decoracion-infantil", "organizadores", "portaobjetos-floreros"],
       "images": [
         "images/productos/cuenco_delfin/001-1.jpg",
         "images/productos/cuenco_delfin/001-2.jpg",
-        "images/productos/cuenco_delfin/001-3.jpg"
+        "images/productos/cuenco_delfin/001-3.jpg",
+        "images/productos/cuenco_delfin/001-4.jpg",
+        "images/productos/cuenco_delfin/001-5.jpg"
       ],
       "context": "Cuenco decorativo con relieve de delfines, ideal para ambientaciones costeras o como pieza temática.",
       "description": "Cuenco blanco de yeso con diseño en relieve de delfines saltando entre olas. Detalles marinos delicados.",
@@ -273,7 +346,8 @@
       "images": [
         "images/productos/nena_canasto/001-1.jpg",
         "images/productos/nena_canasto/001-2.jpg",
-        "images/productos/nena_canasto/001-3.jpg"
+        "images/productos/nena_canasto/001-3.jpg",
+        "images/productos/nena_canasto/001-4.jpg"
       ],
       "context": "Tierna figura infantil con maceta tejida que transmite calidez y nostalgia. Ideal para decorar rincones con encanto y naturaleza.",
       "description": "Figura decorativa de niño con osito, acompañada de una maceta estilo canasta con planta de hojas en forma de corazón. Evoca ternura y conexión con lo natural.",
@@ -302,7 +376,8 @@
       "subcategories": ["aniversarios-romanticos", "portaobjetos-floreros", "decoracion-infantil", "organizadores"],
       "images": [
         "images/productos/contenedor_corazon/001-1.jpg",
-        "images/productos/contenedor_corazon/001-2.jpg"
+        "images/productos/contenedor_corazon/001-2.jpg",
+        "images/productos/contenedor_corazon/001-3.jpg"
       ],
 
       "context": "Elemento decorativo geométrico de estilo minimalista, ideal para ambientaciones modernas con toque natural.",
@@ -329,7 +404,7 @@
     {
       "id": "VEL-001",
       "name": "Vela con forma de Cubo",
-      "subcategories": ["aniversarios-romanticos", "velas-artísticas", "fiestas-15-bodas"],
+      "subcategories": ["aniversarios-romanticos", "velas-artísticas", "fiestas-15-bodas", "espiritualidad-general"],
       "images": [
         "images/productos/vela_cubo/001-1.jpg",
         "images/productos/vela_cubo/001-2.jpg"
@@ -433,7 +508,9 @@
         "images/productos/crocs/001-2.jpg",
         "images/productos/crocs/001-3.jpg",
         "images/productos/crocs/001-4.jpg",
-        "images/productos/crocs/001-5.jpg"
+        "images/productos/crocs/001-5.jpg",
+        "images/productos/crocs/001-6.jpg",
+        "images/productos/crocs/001-7.jpg"
       ],
        "context": "Figura decorativa en forma de zapato con personaje infantil, ideal para ambientaciones lúdicas o temáticas.",
        "description": "Zapato estilo Crocs en yeso blanco con detalles en relieve: personaje con orejas redondeadas, zanahoria y botones.",
