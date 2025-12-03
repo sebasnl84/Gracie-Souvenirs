@@ -3,7 +3,7 @@
     {
       "id": "BAU-001",
       "name": "Ángel de la Guarda",
-      "subcategories": ["bautismo-comunion", "decoracion-infantil", "espiritualidad-general"],
+      "subcategories": ["todos-los-productos", "bautismo-comunion", "decoracion-infantil", "espiritualidad-general"],
       "images": [
         "images/productos/angel/001-1.jpg",
         "images/productos/angel/001-2.jpg"
@@ -38,7 +38,7 @@
     {
       "id": "BAU-002",
       "name": "Niño Rezando",
-      "subcategories": ["bautismo-comunion", "decoracion-infantil", "espiritualidad-general"],
+      "subcategories": ["todos-los-productos", "bautismo-comunion", "decoracion-infantil", "espiritualidad-general"],
       "images": [
         "images/productos/ninio_rezando/001-1.jpg",
         "images/productos/ninio_rezando/001-2.jpg",
@@ -72,11 +72,13 @@
     {
       "id": "VES-002",
       "name": "Vela con Forma de Vestido de Gala Elegante",
-      "subcategories": ["fiestas-15-bodas", "aniversarios-romanticos", "velas-artísticas"],
+      "subcategories": ["todos-los-productos", "fiestas-15-bodas", "aniversarios-romanticos", "velas-artisticas"],
       "images": [
         "images/productos/vestido_gala_elegante/001-1.jpg",
         "images/productos/vestido_gala_elegante/001-2.jpg",
-        "images/productos/vestido_gala_elegante/001-3.jpg"
+        "images/productos/vestido_gala_elegante/001-3.jpg",
+        "images/productos/vestido_gala_elegante/001-4.jpg",
+        "images/productos/vestido_gala_elegante/001-5.jpg"
       ],
       "context": "Vela decorativa con forma de vestido de gala, ideal para ambientaciones elegantes, temáticas de princesas o eventos especiales.",
       "description": "Vela artesanal en forma de vestido azul con detalles en relieve que imitan pliegues y textura de tela.",
@@ -106,7 +108,7 @@
     {
       "id": "VES-003",
       "name": "Vestido de Gala Elegante",
-      "subcategories": ["fiestas-15-bodas", "aniversarios-romanticos"],
+      "subcategories": ["todos-los-productos", "fiestas-15-bodas", "aniversarios-romanticos"],
       "images": [
         "images/productos/vestido_gala_elegante_yeso/001-1.jpg",
         "images/productos/vestido_gala_elegante_yeso/001-2.jpg"
@@ -137,8 +139,9 @@
     {
       "id": "BEB-001",
       "name": "Bebé Dormido en Almohada",
-      "subcategories": ["cumpleanos-infantiles", "baby-shower-nacimiento"],
+      "subcategories": ["todos-los-productos", "cumpleanos-infantiles", "baby-shower-nacimiento"],
       "images": [
+        "images/productos/bebe/001-0.jpg",
         "images/productos/bebe/001-1.jpg",
         "images/productos/bebe/001-2.jpg",
         "images/productos/bebe/001-3.jpg",
@@ -173,10 +176,11 @@
     {
       "id": "VES-001",
       "name": "Vela Decorativa Vestido de Novia",
-      "subcategories": ["fiestas-15-bodas", "aniversarios-romanticos", "velas-artísticas"],
+      "subcategories": ["todos-los-productos", "fiestas-15-bodas", "aniversarios-romanticos", "velas-artisticas"],
       "images": [
-        "images/productos/vestido_gala/001-1.jpg",
-        "images/productos/vestido_gala/001-2.jpg"
+        "images/productos/vestido_gala_vela/001-1.jpg",
+        "images/productos/vestido_gala_vela/001-2.jpg",
+        "images/productos/vestido_gala_vela/001-3.jpg"
       ],
       "context": "Elegante vela con forma de vestido de novia, perfecta para bodas, fiestas de 15 años o como detalle romántico. Un recuerdo único y sofisticado.",
       "description": "Vela artesanal moldeada con forma de vestido elegante, con detalles de tela, encaje y adornos que imitan un vestido de gala.",
@@ -209,7 +213,7 @@
     {
       "id": "VES-004",
       "name": "Vestido de Novia",
-      "subcategories": ["fiestas-15-bodas", "aniversarios-romanticos"],
+      "subcategories": ["todos-los-productos", "fiestas-15-bodas", "aniversarios-romanticos"],
       "images": [
         "images/productos/vestido_gala_yeso/001-1.jpg",
         "images/productos/vestido_gala_yeso/001-2.jpg"
@@ -238,11 +242,47 @@
         "Limpiar solo con pincel suave seco",
         "Mantener en lugar seguro alejado de bordes"
       ]
-    },    
+    },
+    {
+      "id": "VES-005",
+      "name": "Vela de Figura Femenina con Vestido de Novia",
+      "subcategories": ["todos-los-productos", "fiestas-15-bodas", "aniversarios-romanticos", "velas-artisticas"],
+      "images": [
+        "images/productos/vestido_novia_vela/001-1.jpg",
+        "images/productos/vestido_novia_vela/001-2.jpg",
+        "images/productos/vestido_novia_vela/001-3.jpg",
+        "images/productos/vestido_novia_vela/001-4.jpg",
+        "images/productos/vestido_novia_vela/001-5.jpg"
+      ],
+      "context": "Vela decorativa con forma de vestido de novia, ideal para ambientaciones románticas, bodas o regalos temáticos.",
+      "description": "Vela artesanal en forma de figura femenina con vestido de gala tipo novia, sobre base opcional de esferas.",
+      "detailedDescription": "Esta pieza combina elegancia y detalle: una figura femenina sin cabeza con vestido de gala estilo nupcial, esculpida en yeso blanco con pliegues realistas y textura de tela. La base de esferas es opcional y aporta un toque adicional de sofisticación. Perfecta como centro de mesa en bodas, decoración romántica o como vela aromática de colección. Su diseño permite personalización con pintura o uso directo como adorno.",
+      "dimensions": {
+        "height": "20 cm",
+        "width": "10 cm",
+        "depth": "10 cm",
+        "weight": "200 gramos"
+      },
+      "material": "Cera artesanal",
+      "finish": "Natural / Colores personalizados",
+      "features": [
+        "Diseño en forma de figura femenina con vestido de novia",
+        "Textura detallada que imita tela y pliegues",
+        "Base opcional de esferas decorativas",
+        "Función aromática para ambientar espacios",
+        "Pieza artesanal única, ideal para eventos especiales"
+      ],
+      "care": [
+        "Limpiar con pincel suave o paño seco",
+        "Evitar exposición directa al sol o humedad",
+        "No encender en superficies inestables",
+        "Ideal para espacios interiores"
+      ]
+    },     
     {
       "id": "INF-001",
       "name": "Cuenco con Delfines",
-      "subcategories": ["animales-tiernos", "decoracion-infantil", "organizadores", "portaobjetos-floreros"],
+      "subcategories": ["todos-los-productos", "animales-tiernos", "decoracion-infantil", "organizadores", "portaobjetos-floreros"],
       "images": [
         "images/productos/cuenco_delfin/001-1.jpg",
         "images/productos/cuenco_delfin/001-2.jpg",
@@ -276,7 +316,7 @@
     {
       "id": "MON-001",
       "name": "Porta-objetos / Florero con Forma de Moño",
-      "subcategories": ["portaobjetos-floreros", "decoracion-infantil", "organizadores", "fiestas-15-bodas"],
+      "subcategories": ["todos-los-productos", "portaobjetos-floreros", "decoracion-infantil", "organizadores", "fiestas-15-bodas"],
       "images": [
         "images/productos/monio/001-1.jpg",
         "images/productos/monio/001-2.jpg",
@@ -309,7 +349,7 @@
     {
       "id": "NAT-001",
       "name": "Hongo Mágico del Bosque",
-      "subcategories": ["otono-bosque", "figuras-fantasia"],
+      "subcategories": ["todos-los-productos", "otono-bosque", "figuras-fantasia"],
       "images": [
         "images/productos/hongo/001-1.jpg",
         "images/productos/hongo/001-2.jpg",
@@ -342,7 +382,7 @@
     {
       "id": "NEN-001",
       "name": "Nena con Canasto",
-      "subcategories": ["aniversarios-romanticos", "portaobjetos-floreros", "decoracion-infantil", "primavera-jardin"],
+      "subcategories": ["todos-los-productos", "aniversarios-romanticos", "portaobjetos-floreros", "decoracion-infantil", "primavera-jardin"],
       "images": [
         "images/productos/nena_canasto/001-1.jpg",
         "images/productos/nena_canasto/001-2.jpg",
@@ -371,9 +411,9 @@
       ]
     },
     {
-      "id": "COR-001",
+      "id": "CNT-001",
       "name": "Contenedor con forma de Corazón",
-      "subcategories": ["aniversarios-romanticos", "portaobjetos-floreros", "decoracion-infantil", "organizadores"],
+      "subcategories": ["todos-los-productos", "aniversarios-romanticos", "portaobjetos-floreros", "decoracion-infantil", "organizadores"],
       "images": [
         "images/productos/contenedor_corazon/001-1.jpg",
         "images/productos/contenedor_corazon/001-2.jpg",
@@ -404,7 +444,7 @@
     {
       "id": "VEL-001",
       "name": "Vela con forma de Cubo",
-      "subcategories": ["aniversarios-romanticos", "velas-artísticas", "fiestas-15-bodas", "espiritualidad-general"],
+      "subcategories": ["todos-los-productos", "aniversarios-romanticos", "velas-artisticas", "fiestas-15-bodas", "espiritualidad-general"],
       "images": [
         "images/productos/vela_cubo/001-1.jpg",
         "images/productos/vela_cubo/001-2.jpg"
@@ -436,7 +476,7 @@
     {
       "id": "BDC-001",
       "name": "Bandeja Circular",
-      "subcategories": ["aniversarios-romanticos", "fiestas-15-bodas", "decoracion-infantil", "organizadores"],
+      "subcategories": ["todos-los-productos", "aniversarios-romanticos", "fiestas-15-bodas", "decoracion-infantil", "organizadores"],
       "images": [
         "images/productos/bandeja_circular/001-1.jpg",
         "images/productos/bandeja_circular/001-2.jpg",
@@ -469,7 +509,7 @@
     {
       "id": "BDC-002",
       "name": "Bandeja Ovalada",
-      "subcategories": ["aniversarios-romanticos", "fiestas-15-bodas", "decoracion-infantil", "organizadores"],
+      "subcategories": ["todos-los-productos", "aniversarios-romanticos", "fiestas-15-bodas", "decoracion-infantil", "organizadores"],
       "images": [
         "images/productos/bandeja_ovalada/001-1.jpg",
         "images/productos/bandeja_ovalada/001-2.jpg",
@@ -502,7 +542,7 @@
     {
       "id": "CRO-001",
       "name": "Crocs con osito feliz",
-      "subcategories": ["decoracion-infantil", "organizadores", "portaobjetos-floreros", "animales-tiernos", "baby-shower-nacimiento"],
+      "subcategories": ["todos-los-productos", "decoracion-infantil", "organizadores", "portaobjetos-floreros", "animales-tiernos", "baby-shower-nacimiento"],
       "images": [
         "images/productos/crocs/001-1.jpg",
         "images/productos/crocs/001-2.jpg",
@@ -534,7 +574,134 @@
         "Mantener en ambiente seco",
         "Ideal para espacios interiores"
       ]
-    }      
+    },
+    {
+      "id": "CNT-002",
+      "name": "Contenedor decorativo con moño",
+      "subcategories": ["todos-los-productos", "organizadores", "portaobjetos-floreros", "baby-shower-nacimiento", "bautismo-comunion", "fiestas-15-bodas"],
+      "images": [
+        "images/productos/contenedor_monio/001-1.jpg",
+        "images/productos/contenedor_monio/001-2.jpg",
+        "images/productos/contenedor_monio/001-3.jpg"
+      ],
+       "context": "Contenedor decorativo con moño, ideal para detalles delicados, regalos personalizados o ambientaciones románticas.",
+       "description": "Pieza cilíndrica de yeso blanco con moño superior en relieve. Diseño elegante y funcional.",
+       "detailedDescription": "Esta figura artesanal combina simplicidad y encanto: un pequeño contenedor cilíndrico con moño decorativo en la parte superior. Su acabado blanco permite personalización con pintura o técnicas mixtas. Puede utilizarse como portaobjetos, dulcero, base para velas o como envoltorio creativo para pequeños regalos. Su estética delicada lo hace ideal para decoraciones románticas, infantiles o temáticas de celebración.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado",
+      "features": [        
+        "Diseño cilíndrico con moño en relieve",
+        "Acabado blanco listo para pintar",
+        "Funcional como contenedor o pieza decorativa",
+        "Pieza artesanal versátil y elegante"
+      ],
+      "care": [
+        "Limpiar con pincel suave o paño seco",
+        "Evitar exposición directa al sol o humedad",
+        "Ideal para espacios interiores"
+      ]
+    },
+    {
+      "id": "VEL-002",
+      "name": "Vela Ángel Orante",
+      "subcategories": ["todos-los-productos", "velas-artisticas", "bautismo-comunion", "espiritualidad-general"],
+      "images": [
+        "images/productos/angel_vela/001-1.jpg",
+        "images/productos/angel_vela/001-2.jpg",
+        "images/productos/angel_vela/001-3.jpg"
+      ],  
+      "context": "Vela decorativa con forma de ángel, ideal para ambientaciones espirituales, momentos de reflexión o como regalo simbólico.",
+      "description": "Vela artesanal en forma de ángel con alas y manos juntas, esculpida en yeso blanco con detalles delicados.",
+      "detailedDescription": "Esta pieza transmite serenidad y espiritualidad: una figura de ángel con alas extendidas y manos en posición de oración, cuidadosamente modelada en yeso blanco. Su diseño detallado la convierte en una opción perfecta para espacios de meditación, altares, celebraciones religiosas o como obsequio significativo. La mecha superior permite encenderla, aunque su valor decorativo la hace ideal como adorno permanente.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Cera artesanal",
+      "finish": "Natural / Pintado",
+      "features": [
+        "Diseño en forma de ángel orante",
+        "Detalles delicados en alas y vestido",
+        "Función aromática disponible",
+        "Pieza artesanal con valor simbólico"
+      ],
+      "care": [
+        "Limpiar con pincel suave o paño seco",
+        "Evitar exposición directa al sol o humedad",
+        "No encender en superficies inestables",
+        "Ideal para espacios interiores"
+      ]
+    },
+    {
+      "id": "CNT-004",
+      "name": "Florero Texturado",
+      "subcategories": ["todos-los-productos", "organizadores", "portaobjetos-floreros", "primavera-jardin", "fiestas-15-bodas"],
+      "images": [
+        "images/productos/florero_texturado/001-1.jpg",
+        "images/productos/florero_texturado/001-2.jpg"
+      ],
+      "context": "Figura decorativa en forma de florero, ideal como base para composiciones florales o como objeto ornamental.",
+      "description": "Florero de yeso blanco con textura orgánica y base festoneada. Diseño elegante y versátil.",
+      "detailedDescription": "Este florero artesanal destaca por su superficie texturada y base con bordes festoneados, que le aportan carácter y delicadeza. Su diseño neutro permite múltiples usos: como soporte para arreglos florales, pieza decorativa en mesas o estanterías, o como base para intervenciones creativas con pintura. Su estética combina bien con estilos románticos, rústicos o modernos.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado",
+      "features": [        
+        "Diseño de florero con textura orgánica",
+        "Base festoneada que aporta elegancia",
+        "Acabado blanco listo para pintar",
+        "Pieza artesanal versátil para decoración"
+      ],
+      "care": [
+        "Limpiar con pincel suave o paño seco",
+        "Evitar exposición directa al sol o humedad",
+        "Ideal para espacios interiores"
+      ]
+    },
+    {
+      "id": "CNT-005",
+      "name": "Contenedor Trenzado",
+      "subcategories": ["todos-los-productos", "organizadores", "portaobjetos-floreros", "otono-bosque", "aniversarios-romanticos"],
+      "images": [
+        "images/productos/trenzado/001-1.jpg",
+        "images/productos/trenzado/001-2.jpg"
+      ],
+      "context": "Figura decorativa con textura de tejido, ideal como base creativa o pieza ornamental con estilo artesanal.",
+      "description": "Contenedor de yeso blanco con superficie trenzada y borde superior acampanado. Diseño texturado y elegante.",
+      "detailedDescription": "Esta pieza artesanal destaca por su textura que imita tejidos o trenzas, generando un efecto visual cálido y táctil. Su forma cilíndrica con borde superior acampanado le da presencia y versatilidad. Puede utilizarse como portaobjetos, base para arreglos florales, dulcero o simplemente como adorno. Su acabado blanco permite personalización con pintura o técnicas mixtas, adaptándose a estilos rústicos, románticos o modernos.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado",
+      "features": [        
+        "Textura trenzada que imita tejido artesanal",
+        "Borde superior acampanado con diseño elegante",
+        "Acabado blanco listo para pintar",
+        "Pieza artesanal versátil para decoración"
+      ],
+      "care": [
+        "Limpiar con pincel suave o paño seco",
+        "Evitar exposición directa al sol o humedad",
+        "Ideal para espacios interiores"
+      ]
+    }    
   ],
   "categories": {
     "eventos": {
@@ -561,7 +728,12 @@
       "name": "Temporada y Naturaleza",
       "description": "Inspirados en la belleza natural",
       "icon": "🌿"
-    }
+    },
+    "todos": {
+      "name": "Todos los Productos",
+      "description": "Colección completa de figuras artesanales en yeso y cera, agrupadas por estilo y función.",
+      "icon": "✨"
+    }    
   },
   "subcategories": {
     "cumpleanos-infantiles": {
@@ -653,6 +825,12 @@
       "parent": "naturaleza",
       "description": "Hongos, bases rústicas, texturas naturales",
       "icon": "🍂"
-    }
+    },
+    "todos-los-productos": {
+      "name": "Todos los Productos",
+      "parent": "todos",
+      "description": "Explorá cada pieza disponible en el catálogo: velas, figuras decorativas, bases y más.",
+      "icon": "✨"
+    }    
   }
 }
