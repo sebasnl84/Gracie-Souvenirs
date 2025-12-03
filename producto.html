@@ -42,6 +42,18 @@
     <div id="errorState" class="error-message" style="display: none;"></div>
     <div id="productContent" style="display: none;"></div>
 
+    <!-- Image Modal/Lightbox -->
+    <div id="imageModal" class="image-modal" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeImageModal()">&times;</button>
+            <button class="modal-nav modal-prev" onclick="previousImage()">‹</button>
+            <img id="modalImage" src="" alt="Imagen del producto" class="modal-image">
+            <button class="modal-nav modal-next" onclick="nextImage()">›</button>
+            <div class="modal-thumbnails" id="modalThumbnails"></div>
+            <div class="modal-counter" id="modalCounter"></div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -237,7 +249,7 @@
             `).join('');
 
             mainContainer.innerHTML = images.map((img, index) => `
-                <img src="${img}" alt="${currentProduct.name}" class="main-image ${index === 0 ? '' : 'hidden'}" data-index="${index}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22500%22%3E%3Crect fill=%22%23f5f1e8%22 width=%22500%22 height=%22500%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 text-anchor=%22middle%22 dy=%22.3em%22%3EImagen%3C/text%3E%3C/svg%3E'">
+                <img src="${img}" alt="${currentProduct.name}" class="main-image ${index === 0 ? '' : 'hidden'}" data-index="${index}" style="cursor: pointer;" onclick="openImageModal(${index})" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22500%22%3E%3Crect fill=%22%23f5f1e8%22 width=%22500%22 height=%22500%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 text-anchor=%22middle%22 dy=%22.3em%22%3EImagen%3C/text%3E%3C/svg%3E'">
             `).join('');
 
             startAutoRotate();
@@ -284,6 +296,77 @@
             );
             document.getElementById('whatsappFloat').href = `https://wa.me/5491161486521?text=${message}`;
         }
+
+        // Variables para el modal
+        let modalImageIndex = 0;
+        let modalImages = [];
+
+        // Abrir modal de imagen
+        function openImageModal(index = 0) {
+            modalImageIndex = index;
+            modalImages = currentProduct.images;
+            showModalImage();
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Cerrar modal
+        function closeImageModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Mostrar imagen en modal
+        function showModalImage() {
+            if (!modalImages || modalImages.length === 0) return;
+            
+            document.getElementById('modalImage').src = modalImages[modalImageIndex];
+            document.getElementById('modalCounter').textContent = `${modalImageIndex + 1}/${modalImages.length}`;
+            
+            // Actualizar thumbnails
+            const thumbsContainer = document.getElementById('modalThumbnails');
+            thumbsContainer.innerHTML = modalImages.map((img, idx) => `
+                <img src="${img}" class="modal-thumbnail ${idx === modalImageIndex ? 'active' : ''}" 
+                     onclick="goToImage(${idx})" alt="Imagen ${idx + 1}">
+            `).join('');
+        }
+
+        // Ir a imagen específica
+        function goToImage(index) {
+            modalImageIndex = index;
+            showModalImage();
+        }
+
+        // Siguiente imagen
+        function nextImage() {
+            modalImageIndex = (modalImageIndex + 1) % modalImages.length;
+            showModalImage();
+        }
+
+        // Imagen anterior
+        function previousImage() {
+            modalImageIndex = (modalImageIndex - 1 + modalImages.length) % modalImages.length;
+            showModalImage();
+        }
+
+        // Cerrar modal al hacer clic fuera
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('imageModal');
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeImageModal();
+                }
+            });
+
+            // Navegación con teclado
+            document.addEventListener('keydown', (e) => {
+                if (modal.style.display === 'flex') {
+                    if (e.key === 'ArrowRight') nextImage();
+                    if (e.key === 'ArrowLeft') previousImage();
+                    if (e.key === 'Escape') closeImageModal();
+                }
+            });
+        });
 
         // Inicializar
         document.addEventListener('DOMContentLoaded', loadProduct);
