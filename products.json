@@ -3,7 +3,7 @@
     {
       "id": "BAU-001",
       "name": "Ángel de la Guarda",
-      "subcategories": ["todos-los-productos", "bautismo-comunion", "decoracion-infantil", "espiritualidad-general"],
+      "subcategories": ["todos-los-productos", "bautismo-comunion", "decoracion-infantil", "espiritualidad-general", "navidad-pascuas"],
       "images": [
         "images/productos/angel/001-1.jpg",
         "images/productos/angel/001-2.jpg"
@@ -38,7 +38,7 @@
     {
       "id": "BAU-002",
       "name": "Niño Rezando",
-      "subcategories": ["todos-los-productos", "bautismo-comunion", "decoracion-infantil", "espiritualidad-general"],
+      "subcategories": ["todos-los-productos", "bautismo-comunion", "decoracion-infantil", "espiritualidad-general", "navidad-pascuas"],
       "images": [
         "images/productos/ninio_rezando/001-1.jpg",
         "images/productos/ninio_rezando/001-2.jpg",
@@ -380,6 +380,36 @@
       ]
     },
     {
+      "id": "NAT-002",
+      "name": "Miniaturas de Insectos",
+      "subcategories": ["todos-los-productos", "otono-bosque", "figuras-fantasia", "animales-tiernos"],
+      "images": [
+        "images/productos/insectos/001-1.jpg"
+      ],
+      "context": "Figuras decorativas pequeñas con forma de insectos, ideales para ambientaciones infantiles, temáticas naturales o como detalles creativos.",
+      "description": "Conjunto de figuras de yeso blanco con forma de insectos: mariquita, abeja, oruga y más.",
+      "detailedDescription": "Estas miniaturas artesanales representan distintos insectos con estilo lúdico y texturas marcadas. Cada figura está modelada en yeso blanco, con detalles como alas, ojos, segmentos y patrones que evocan la naturaleza de forma simpática. Son ideales para decorar espacios infantiles, jardines temáticos, souvenirs o como base para intervenciones con pintura. Su tamaño compacto permite agruparlas en composiciones o usarlas como pequeños regalos.",
+      "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado con colores tierra",
+      "features": [
+        "Diseños variados: mariquita, abeja, oruga y otros",
+        "Texturas marcadas y formas reconocibles",
+        "Acabado blanco listo para pintar",
+        "Piezas artesanales pequeñas y versátiles"
+      ],
+      "care": [
+        "Limpiar con pincel suave",
+        "Mantener en ambiente seco",
+        "Ideal para espacios interiores"
+      ]
+    },    
+    {
       "id": "NEN-001",
       "name": "Nena con Canasto",
       "subcategories": ["todos-los-productos", "aniversarios-romanticos", "portaobjetos-floreros", "decoracion-infantil", "primavera-jardin"],
@@ -444,7 +474,7 @@
     {
       "id": "VEL-001",
       "name": "Vela con forma de Cubo",
-      "subcategories": ["todos-los-productos", "aniversarios-romanticos", "velas-artisticas", "fiestas-15-bodas", "espiritualidad-general"],
+      "subcategories": ["todos-los-productos", "aniversarios-romanticos", "velas-artisticas", "fiestas-15-bodas", "espiritualidad-general", "navidad-pascuas"],
       "images": [
         "images/productos/vela_cubo/001-1.jpg",
         "images/productos/vela_cubo/001-2.jpg"
@@ -610,7 +640,7 @@
     {
       "id": "VEL-002",
       "name": "Vela Ángel Orante",
-      "subcategories": ["todos-los-productos", "velas-artisticas", "bautismo-comunion", "espiritualidad-general"],
+      "subcategories": ["todos-los-productos", "velas-artisticas", "bautismo-comunion", "espiritualidad-general", "navidad-pascuas"],
       "images": [
         "images/productos/angel_vela/001-1.jpg",
         "images/productos/angel_vela/001-2.jpg",
@@ -674,7 +704,7 @@
     {
       "id": "CNT-005",
       "name": "Contenedor Trenzado",
-      "subcategories": ["todos-los-productos", "organizadores", "portaobjetos-floreros", "otono-bosque", "aniversarios-romanticos"],
+      "subcategories": ["todos-los-productos", "organizadores", "portaobjetos-floreros", "otono-bosque", "aniversarios-romanticos", "navidad-pascuas"],
       "images": [
         "images/productos/trenzado/001-1.jpg",
         "images/productos/trenzado/001-2.jpg"
@@ -695,6 +725,36 @@
         "Borde superior acampanado con diseño elegante",
         "Acabado blanco listo para pintar",
         "Pieza artesanal versátil para decoración"
+      ],
+      "care": [
+        "Limpiar con pincel suave o paño seco",
+        "Evitar exposición directa al sol o humedad",
+        "Ideal para espacios interiores"
+      ]
+        },
+    {
+      "id": "NAV-001",
+      "name": "Miniaturas Festivas",
+      "subcategories": ["todos-los-productos", "navidad-pascuas"],
+      "images": [
+        "images/productos/campanita_navidad/001-1.jpg"
+      ],
+      "context": "Figuras decorativas pequeñas con motivos de celebración, ideales para souvenirs, eventos temáticos o detalles personalizados.",
+      "description": "Conjunto de figuras de yeso blanco con formas de campanas con moño, birretes y otros símbolos festivos.",
+      "detailedDescription": "Estas miniaturas artesanales representan íconos de celebración como campanas con moño, birretes de graduación y otros elementos simbólicos. Modeladas en yeso blanco, cada pieza está pensada como detalle decorativo para eventos especiales, souvenirs personalizados o intervenciones creativas con pintura. Su tamaño compacto y diseño delicado las hacen ideales para presentaciones grupales, kits temáticos o decoraciones de mesa.",
+       "dimensions": {
+        "height": "10 cm",
+        "width": "8 cm",
+        "depth": "8 cm",
+        "weight": "90 gramos"
+      },
+      "material": "Yeso artesanal",
+      "finish": "Natural / Pintado",
+      "features": [        
+        "Diseños variados con temática festiva",
+        "Formas reconocibles: campanas, birretes y más",
+        "Acabado blanco listo para pintar",
+        "Piezas artesanales pequeñas y versátiles"
       ],
       "care": [
         "Limpiar con pincel suave o paño seco",
