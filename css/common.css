@@ -4,11 +4,18 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Georgia', 'Garamond', serif;
     color: var(--gris-texto);
     background-color: var(--blanco-yeso);
     line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Header */
